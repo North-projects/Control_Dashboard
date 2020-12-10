@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Garage"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/garazna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-190dp"
+        android:layout_marginBottom="150dp"
+        android:text="Garažna vrata"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-38dp"
+        android:layout_marginBottom="-27dp"
+        android:text="Status:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textPHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:text="Neznan"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/garaznavrata"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#31DDC8"
+        android:baselineAligned="false"
+        android:text="odpri/zapri"
+        android:textSize="16sp" />
+
+</LinearLayout>

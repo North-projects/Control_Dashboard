@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Lights"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-190dp"
+        android:text="Osvetljenost prostora"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/trenutna_vrednost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="108dp"
+        android:text="Trenutna vrednost:"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/lux"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/trenutna_vrednost"
+        android:text="Lux"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/avt_upr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trenutna_vrednost"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:text="Avtomatsko upravljanje:"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/status1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trenutna_vrednost"
+        android:layout_toEndOf="@id/avt_upr"
+        android:text="Ni povezave"
+        android:textColor="#FF0000"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/gumb_gor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:background="#31DDC8"
+        android:text="dvig"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/gumb_dol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gumb_gor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#31DDC8"
+        android:text="spust"
+        android:textSize="16sp" />
+
+</RelativeLayout>

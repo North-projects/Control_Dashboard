@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Temperature"
+    tools:ignore="HardcodedText"
+    >
+
+
+    <TextView
+        android:id="@+id/temperatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-130dp"
+        android:layout_marginBottom="100dp"
+        android:text="Ogrevanje prostora"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/tempnum"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:textColorHint="@android:color/black"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textCursorDrawable="@android:color/black"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Želena temperatura"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Vstavite 0 za izklop"
+        android:layout_marginBottom="25dp" />
+
+    <Button
+        android:id="@+id/Tempset"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:background="#31DDC8"
+        android:text="Regulacija"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/ogrevanje"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#31DDC8"
+        android:text="Ročni zagon"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textPHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Naprava je nedoseglijva"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp" />
+
+</LinearLayout>
